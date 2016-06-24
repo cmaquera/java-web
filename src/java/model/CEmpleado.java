@@ -25,7 +25,7 @@ public class CEmpleado extends CPersona{
     public CEmpleado(){}
     
     public void setCargo(CCargo cargo){ this.cargo = cargo; }
-    public void serHorario(String horario){ this.horario = horario; }
+    public void setHorario(String horario){ this.horario = horario; }
     
     public CCargo getCargo(){ return this.cargo; }
     public String getHorario(){  return this.horario; }

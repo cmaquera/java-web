@@ -6,6 +6,7 @@
 package model;
 
 import java.util.ArrayList;
+import dao.empleadoDAO;
 
 /**
  *
@@ -28,6 +29,18 @@ public class CListaEmpleado {
         return "El Empleado ya esta registrado";
     }
     
+    public void deleteEmpleado(String DNI){
+        int i=-1;
+        for(CEmpleado obj: lEmpleado){
+            if(obj.getDNI().equals(DNI)){
+                i++;
+                break;
+            }
+        }
+        
+        empleadoDAO oEmpleadoDAO = new empleadoDAO();
+        oEmpleadoDAO.deleteEmpleado(DNI);
+    }
     public CEmpleado BuscarEmpleado(String DNI){
         for(CEmpleado objEmpleado : lEmpleado){
             if(objEmpleado.getDNI().equals(DNI)){

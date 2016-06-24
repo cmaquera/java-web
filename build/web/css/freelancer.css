@@ -1,0 +1,26 @@
+#portfolio .container{
+    margin: auto;
+    padding: auto;
+}
+
+#portfolio .portfolio-item {
+    margin: auto;
+    padding: auto;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+}
+.portfolio-link:hover{
+    opacity: 50%;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
